@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
-require('dotenv').config();
+import 'dotenv/config'
 
 const db = new pg.Client({
   user: process.env.DB_USER,
